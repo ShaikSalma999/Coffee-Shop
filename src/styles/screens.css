@@ -1,0 +1,94 @@
+/* Onboarding */
+.onb { background: #040404; color: #fff; text-align: center; }
+.onb-hero { position: absolute; top: 0; left: 0; width: 375px; height: 480px; object-fit: cover; -webkit-mask-image: linear-gradient(#000 80%, transparent); mask-image: linear-gradient(#000 80%, transparent); }
+.onb h1 { position: absolute; top: 477px; left: 0; right: 0; font-size: 30px; line-height: 48px; font-weight: 600; white-space: nowrap; }
+.onb p { position: absolute; top: 627px; left: 0; right: 0; font-size: 14px; line-height: 22px; color: var(--muted); white-space: nowrap; }
+.onb .btn { position: absolute; top: 703px; left: 24px; right: 24px; width: 327px; }
+
+/* Home */
+.home-top { position: absolute; top: 0; left: 0; right: 0; height: 280px; background: linear-gradient(#1d1d1d, #2f2f2f); }
+.loc { position: absolute; top: 66px; left: 24px; }
+.loc span { display: block; font-size: 12px; line-height: 18px; color: var(--muted); }
+.loc b { margin-top: 6px; display: flex; align-items: center; gap: 8px; font-size: 14px; line-height: 20px; font-weight: 600; color: #dedede; }
+.search { position: absolute; top: 135px; left: 24px; right: 24px; display: flex; gap: 16px; }
+.search label { flex: 1; height: 52px; border-radius: 16px; background: #2a2a2a; color: #fff; display: flex; align-items: center; gap: 6px; padding-left: 14px; }
+.search input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: #fff; font: 400 14px 'Sora', sans-serif; }
+.search input::placeholder { color: var(--muted); }
+.filter { width: 52px; height: 52px; }
+.banner { position: absolute; top: 211px; left: 24px; width: 327px; height: 140px; }
+.chips { position: absolute; top: 375px; left: 24px; width: 327px; display: flex; gap: 16px; overflow-x: auto; scrollbar-width: none; }
+.chips::-webkit-scrollbar, .grid::-webkit-scrollbar { display: none; }
+.chip { flex: none; height: 29px; padding: 0 16px; border-radius: 6px; background: var(--fill); color: #2f2d2c; font-size: 14px; }
+.chip.on { background: var(--accent); color: #fff; font-weight: 600; }
+.grid { position: absolute; top: 420px; bottom: 99px; left: 24px; width: 327px; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 238px; gap: 24px 16px; overflow-y: auto; padding-bottom: 24px; scrollbar-width: none; }
+
+/* Detail */
+.detail h3 { position: absolute; left: 24px; top: 469px; font-size: 16px; line-height: 24px; font-weight: 600; }
+.detail hr { top: 454px; }
+.d-img { position: absolute; top: 136px; left: 24px; width: 327px; height: 202px; object-fit: cover; border-radius: 22px; }
+.d-head { position: absolute; top: 355px; left: 24px; right: 24px; display: flex; justify-content: space-between; }
+.d-head h2 { font-size: 20px; line-height: 28px; font-weight: 600; }
+.d-head p { margin-top: 3px; font-size: 12px; line-height: 18px; color: var(--muted); }
+.rate { margin: 12px 0 0 -1px; display: flex; align-items: center; gap: 6px; height: 24px; }
+.rate b { font-size: 16px; font-weight: 600; } .rate span { font-size: 14px; color: var(--muted); }
+.tiles { margin-top: 19px; display: flex; gap: 12px; }
+.tiles i { width: 44px; height: 44px; border-radius: 14px; background: var(--fill); color: var(--accent); display: grid; place-items: center; }
+.desc { position: absolute; top: 502px; left: 24px; width: 327px; font-size: 14px; line-height: 20.5px; color: var(--muted); }
+.desc b { color: var(--accent); font-weight: 600; }
+.detail h3.sz { top: 588px; }
+.sizes { position: absolute; top: 629px; left: 24px; display: flex; gap: 16px; }
+.sizes button { width: 96px; height: 41px; border-radius: 12px; background: #fff; border: 1px solid var(--line); font-size: 14px; }
+.sizes button.on { background: #fff5ee; border-color: var(--accent); color: var(--accent); }
+.buy { height: 118px; padding: 16px 24px 0; display: flex; justify-content: space-between; }
+.buy span { display: block; margin-top: 2px; font-size: 14px; line-height: 20px; color: var(--muted); }
+.buy b { display: block; margin-top: 4px; font-size: 18px; line-height: 26px; font-weight: 600; color: var(--accent); }
+.buy .btn { width: 216px; }
+
+/* Order */
+.order .hdr { top: 63px; }
+.order h3 { position: absolute; left: 24px; font-size: 16px; line-height: 24px; font-weight: 600; top: 198px; }
+.seg { position: absolute; top: 132px; left: 24px; right: 24px; height: 43px; padding: 4px; border-radius: 12px; background: #ededed; display: flex; }
+.seg button { flex: 1; border-radius: 10px; font-size: 16px; }
+.seg button.on { background: var(--accent); color: #fff; font-weight: 600; }
+.addr { position: absolute; top: 240px; left: 24px; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink2); }
+.addr-sub { position: absolute; top: 262px; left: 24px; font-size: 12px; line-height: 18px; color: var(--muted); }
+.pills { position: absolute; top: 294px; left: 24px; display: flex; gap: 9px; }
+.pills button { height: 26px; padding: 0 12px; border: 1px solid #a2a2a2; border-radius: 16px; display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.order hr { top: 336px; }
+.item { position: absolute; top: 352px; left: 24px; right: 24px; height: 54px; display: flex; align-items: center; gap: 16px; }
+.item img { width: 54px; height: 54px; border-radius: 14px; object-fit: cover; }
+.item b { font-size: 16px; line-height: 22px; font-weight: 600; display: block; }
+.item p { margin-top: 4px; font-size: 12px; line-height: 18px; color: var(--muted); }
+.qty { margin-left: auto; display: flex; align-items: center; gap: 17px; font-size: 14px; font-weight: 500; }
+.qty button { width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 1px #ededed; display: grid; place-items: center; }
+.strip { position: absolute; top: 422px; left: 0; right: 0; height: 4px; background: #fbefe6; }
+.disc { position: absolute; top: 443px; left: 24px; right: 24px; height: 55px; padding: 0 16px; border-radius: 16px; background: #fff; border: 1px solid #ededed; display: flex; align-items: center; gap: 12px; text-align: left; }
+.disc b { flex: 1; font-size: 14px; font-weight: 600; }
+.order h3.pay-h { top: 521px; }
+.rows { position: absolute; top: 563px; left: 24px; right: 24px; }
+.row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 14px; line-height: 20px; }
+.row b { font-weight: 700; } .row s { font-weight: 400; margin-right: 6px; }
+.pay { height: 165px; padding: 14px 24px 0; }
+.wallet { display: flex; gap: 10px; height: 49px; }
+.wallet svg { margin-top: 8px; flex: none; } .wallet > svg:last-child { margin: 9px 0 0 auto; }
+.wallet b { display: block; font-size: 14px; line-height: 20px; font-weight: 600; }
+.wallet span { display: block; margin-top: 3px; font-size: 12px; line-height: 18px; font-weight: 600; color: var(--accent); }
+.pay .btn { width: 100%; }
+
+/* Delivery */
+.map { position: absolute; top: 0; left: 0; width: 375px; height: 492px; object-fit: cover; }
+.hit { position: absolute; top: 68px; width: 44px; height: 44px; }
+.track { height: 322px; padding: 35px 24px 0; text-align: center; border-radius: 32px 32px 0 0; }
+.grab { position: absolute; top: 16px; left: 50%; width: 40px; height: 5px; margin-left: -20px; border-radius: 3px; background: var(--line); }
+.track h2 { font-size: 18px; line-height: 26px; font-weight: 600; }
+.to { font-size: 14px; line-height: 20px; color: var(--muted); } .to b { color: var(--ink2); font-weight: 600; }
+.bars { margin-top: 24px; padding: 0 6px; display: flex; gap: 10px; }
+.bars i { flex: 1; height: 4px; border-radius: 2px; background: var(--line); } .bars i.g { background: var(--green); }
+.status-card { margin-top: 16px; height: 76px; padding: 0 10px; border: 1px solid var(--line); border-radius: 16px; display: flex; align-items: center; gap: 16px; text-align: left; }
+.ico { width: 56px; height: 56px; flex: none; border: 1px solid var(--line); border-radius: 16px; display: grid; place-items: center; color: var(--accent); }
+.status-card b, .courier b { display: block; font-size: 16px; line-height: 22px; font-weight: 600; }
+.status-card p, .courier p { font-size: 12px; line-height: 18px; color: var(--muted); white-space: nowrap; }
+.status-card p { margin-top: 3px; } .courier p { margin-top: 2px; }
+.courier { margin-top: 15px; display: flex; align-items: center; gap: 16px; text-align: left; }
+.courier img { width: 56px; height: 56px; border-radius: 18px; }
+.courier button { margin-left: auto; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 14px; display: grid; place-items: center; }

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scoped mini-reset: only applies inside the new order/tracking UI (.tw-root),
+   so the existing screens are unaffected. Lives in the base layer, so any
+   tw- utility still overrides it. */
+@layer base {
+  .tw-root,
+  .tw-root *,
+  .tw-root ::before,
+  .tw-root ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e3e3e3;
+  }
+  .tw-root img,
+  .tw-root svg {
+    display: block;
+  }
+  .tw-root ol,
+  .tw-root ul {
+    list-style: none;
+  }
+}
+
+/* Plain CSS (not in a Tailwind layer) so the class name is used exactly as written. */
+.tw-no-scrollbar::-webkit-scrollbar { display: none; }
+.tw-no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
